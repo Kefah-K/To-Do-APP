@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO List APP</title>
+
+    <!--CSS -->
+    
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+
+</head>
+<body>
+    <div class="container1">
+        <div class="container">
+            <div class="row">
+                <div class="todo-app col-lg-6 col-md-8 col-10 mx-auto my-auto">
+                    <h2>To-Do List<img src="img/icon.png" alt="To-Do" class="img-fluid"></h2>
+                    <div class="row1 row">
+                        <input type="text" id="input-box" placeholder="Add Your Task " >
+                        <button type="button" onclick="addTask()" >Add</button>
+                    </div>
+                    <ul id="tasks">
+                        <!-- <li class="checked">Task 1</li>
+                        <li>Task 2</li>
+                        <li>Task 3</li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

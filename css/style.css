@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins','sans-serif';
+    box-sizing: border-box;
+}
+
+.container1{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#A45A37,#F2B597);
+    padding: 10px;
+}
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px; 
+    border-radius: 10px;
+}
+.todo-app h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.todo-app h2 img{
+    width: 37px;
+    margin-left: 20px;
+}
+.row1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+.row1 input{
+    flex: 1;/*it will take full width*/
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 18px;
+    max-width: ;
+}
+.row1 button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+#tasks li{
+    list-style: none;
+    font-size: 19px;
+    font-size: 400;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+#tasks li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(../img/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 10px ;
+    left: 8px;
+}
+#tasks li.checked{
+    color: #636363;
+    text-decoration: line-through;
+}
+#tasks li.checked::before{
+    background-image: url(../img/checked.png);
+}
+#tasks li .delet-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 20px;
+    font-size: 40px;
+    font-weight: 400;
+    color: #636363;
+    text-align: center;
+    transition: 0.5s;
+}
+#tasks li .delet-btn:hover{
+    color: rgb(230, 46, 46);
+}
+
+.edit-btn {
+    position: absolute;
+    right: 50px;
+    top: 0;
+    width: 55px;
+    height: 15px;
+    font-size: 35px;
+    font-weight: 400;
+    color: #636363;
+    text-align: center;
+    transition: 0.5s;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#tasks li .edit-btn:hover{
+    color: rgb(73, 176, 77);
+}
+
+@media (max-width : 766px){
+    .row1 button{
+        transform: translateX(-75%);
+        padding: 14px 30px;
+        font-size: 14px;
+    }
+    .delet-btn{
+        font-size: 30px;
+    }
+    .edit-btn{
+        font-size: 30px;
+    }
+    .row1 {
+        max-width: 80%;
+    }
+}
